@@ -29,20 +29,33 @@
             Art by:
           </div>
           <div>
-          artists
+            @foreach($fumetto['artists'] as $bo)
+
+              <span>{{$bo}}; </span>
+
+            @endforeach
           </div>
         </div>
-      </div>
-      <div class="main2-middle-right">
-        <h4>Specs</h4>
         <div class="middle-table">
           <div>
             Written by:
           </div>
           <div>
-            @dump($fumetto)
+            @foreach($fumetto['writers'] as $bo)
+
+              <span>{{$bo}}; </span>
+
+            @endforeach
           </div>
         </div>
+
+
+
+
+      </div>
+      <div class="main2-middle-right">
+        <h4>Specs</h4>
+
       </div>
     </div>
   </main>

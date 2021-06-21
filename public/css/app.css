@@ -173,7 +173,6 @@
   width: 100%;
 }
 .main2-middle {
-  height: 200px;
   background-color: #f6f6f6;
   padding: 0 220px;
   display: flex;
@@ -188,6 +187,9 @@
 .main2-middle-right .middle-table, .main2-middle-left .middle-table {
   display: flex;
   justify-content: space-between;
+}
+.main2-middle-right .middle-table div:last-of-type, .main2-middle-left .middle-table div:last-of-type {
+  padding-left: 100px;
 }
 .main2-middle-right {
   margin-left: 20px;
