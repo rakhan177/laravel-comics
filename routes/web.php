@@ -22,3 +22,22 @@ Route::get('/', function () {
   // ora passo l' array associativo come secondo argomento della view
     return view('homePage', ["datiView" => $elements]);
 });
+
+Route::get('/comics/{id}', function($id) {
+
+  $elements = config("comics");
+  // prendo l' indice dei dati che sceglierà l' utente e lo salvo in una variabile
+  // e la passo al return
+  // controllo che l' id sia possibile
+
+  if(!is_numeric($id) || $id < 0 || $id > count($elements) -1){
+    abort(404, 'Prodotto Inesistente');
+  }
+
+  $comic_choose = $elements[$id];
+
+  return view('comics.comic', [
+    "fumetto" => $comic_choose,
+  ]);
+  // return'ciao';
+})->name('fumetti');
