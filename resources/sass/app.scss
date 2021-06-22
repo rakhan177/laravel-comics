@@ -199,15 +199,23 @@
     justify-content: space-between;
     &-right, &-left{
       width: 50%;
+      padding-bottom: 20px;
       h4{
-
+        height: 50px;
+        line-height: 50px;
         border-bottom: 1px solid black;
       }
       .middle-table{
         display: flex;
         justify-content: space-between;
+
+        div{
+          padding-top: 20px;
+          
+        }
         div:last-of-type{
-          padding-left: 100px;
+          width: 70%;
+
         }
       }
     }

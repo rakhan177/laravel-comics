@@ -180,16 +180,22 @@
 }
 .main2-middle-right, .main2-middle-left {
   width: 50%;
+  padding-bottom: 20px;
 }
 .main2-middle-right h4, .main2-middle-left h4 {
+  height: 50px;
+  line-height: 50px;
   border-bottom: 1px solid black;
 }
 .main2-middle-right .middle-table, .main2-middle-left .middle-table {
   display: flex;
   justify-content: space-between;
 }
+.main2-middle-right .middle-table div, .main2-middle-left .middle-table div {
+  padding-top: 20px;
+}
 .main2-middle-right .middle-table div:last-of-type, .main2-middle-left .middle-table div:last-of-type {
-  padding-left: 100px;
+  width: 70%;
 }
 .main2-middle-right {
   margin-left: 20px;

@@ -55,6 +55,36 @@
       </div>
       <div class="main2-middle-right">
         <h4>Specs</h4>
+        <div class="middle-table">
+          <div>
+            Series:
+          </div>
+          <div>
+            {{$fumetto['series']}}
+          </div>
+
+
+        </div>
+        <div class="middle-table">
+          <div>
+            US Price:
+          </div>
+          <div>
+            {{$fumetto['price']}}
+          </div>
+
+
+        </div>
+        <div class="middle-table">
+          <div>
+            On sale date:
+          </div>
+          <div>
+            {{$fumetto['sale_date']}}
+          </div>
+
+
+        </div>
 
       </div>
     </div>
